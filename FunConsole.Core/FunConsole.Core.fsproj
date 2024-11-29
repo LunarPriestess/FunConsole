@@ -5,4 +5,8 @@
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
 
+    <ItemGroup>
+        <Compile Include="Graphics\Color.fs" />
+    </ItemGroup>
+
 </Project>
