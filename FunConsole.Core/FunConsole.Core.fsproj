@@ -7,7 +7,6 @@
 
     <ItemGroup>
         <Compile Include="Graphics\Color.fs" />
-        <Compile Include="Library.fs" />
     </ItemGroup>
 
 </Project>
