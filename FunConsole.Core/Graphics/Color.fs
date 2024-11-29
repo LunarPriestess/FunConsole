@@ -1,11 +1,7 @@
 namespace FunConsole.Core.Graphics
 
 [<Struct>]
-type Color = { R: byte; G: byte; B: byte; A: byte } with
-    static member (+) (x, y) =
-        { R = x.R + y.R; G = x.G + y.G; B = x.B + y.B; A = x.A + y.A }
-    static member (-) (x, y) =
-        { R = x.R - y.R; G = x.G - y.G; B = x.B - y.B; A = x.A - y.A }
+type Color = { R: byte; G: byte; B: byte; A: byte } 
     
 [<RequireQualifiedAccess>]
 module Colors = 
@@ -18,3 +14,18 @@ module Colors =
     let Magenta =       { R = 255uy; G = 000uy; B = 255uy; A = 255uy }  
     let Cyan =          { R = 000uy; G = 255uy; B = 255uy; A = 255uy }
     let White =         { R = 255uy; G = 255uy; B = 255uy; A = 255uy }
+    
+type Color with
+    static member (+) (x, y) =
+        { R = x.R + y.R; G = x.G + y.G; B = x.B + y.B; A = x.A + y.A }
+    static member (-) (x, y) =
+        { R = x.R - y.R; G = x.G - y.G; B = x.B - y.B; A = x.A - y.A }
+    static member (*) (x, y) =
+        { R = x.R * y.R; G = x.G * y.G; B = x.B * y.B; A = x.A * y.A }
+    static member (*) (x, y) =
+        { R = x.R * y; G = x.G * y; B = x.B * y; A = x.A * y }
+    static member (/) (x, y) =
+        { R = x.R / y.R; G = x.G / y.G; B = x.B / y.B; A = x.A / y.A }
+    static member (/) (x, y) =
+        { R = x.R / y; G = x.G / y; B = x.B / y; A = x.A / y }
+    static member (~-) x = Colors.White - x
