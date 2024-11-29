@@ -1,7 +1,11 @@
 namespace FunConsole.Core.Graphics
 
 [<Struct>]
-type Color = { R: byte; G: byte; B: byte; A: byte }
+type Color = { R: byte; G: byte; B: byte; A: byte } with
+    static member (+) (x, y) =
+        { R = x.R + y.R; G = x.G + y.G; B = x.B + y.B; A = x.A + y.A }
+    static member (-) (x, y) =
+        { R = x.R - y.R; G = x.G - y.G; B = x.B - y.B; A = x.A - y.A }
     
 [<RequireQualifiedAccess>]
 module Colors = 
