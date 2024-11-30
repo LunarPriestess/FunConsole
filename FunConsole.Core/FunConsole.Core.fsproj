@@ -7,6 +7,7 @@
 
     <ItemGroup>
         <Compile Include="Graphics\Color.fs" />
+        <Compile Include="Message.fs" />
     </ItemGroup>
 
     <ItemGroup>
