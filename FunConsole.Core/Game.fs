@@ -3,10 +3,14 @@ namespace FunConsole.Core
 open SFML.Graphics
 open SFML.Window
 
+type GameConfiguration =
+    { WindowTitle: string; Width: uint; Height: uint; DefaultFont: unit }
+
 /// <summary>
 /// The game object.
 /// </summary>
-type Game() =
+type Game(config) =
+    let configuration = config    
     let mutable gameWindow: RenderWindow option = None
     
     /// <summary>
@@ -15,7 +19,8 @@ type Game() =
     let windowSetup () =
         match gameWindow with
         | None ->
-            gameWindow <- Some (new RenderWindow(VideoMode(500u, 500u), "Replace Later"))
+            let vm = VideoMode(config.Width, config.Height)
+            gameWindow <- Some (new RenderWindow(vm, config.WindowTitle))
             match gameWindow with
             | None -> failwith "The game window could not be created." (* TODO: Create a custom Exception for this. *)
             | Some window -> window.Closed.Add(fun _ -> window.Close())
