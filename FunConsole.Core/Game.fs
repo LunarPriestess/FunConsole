@@ -3,6 +3,9 @@ namespace FunConsole.Core
 open SFML.Graphics
 open SFML.Window
 
+/// Takes in an entity registry and a message registry to do stuff to them. 
+type System = unit -> unit -> unit 
+
 type GameConfiguration =
     { WindowTitle: string; Width: uint; Height: uint; DefaultFont: unit }
 
