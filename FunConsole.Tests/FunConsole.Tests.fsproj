@@ -21,4 +21,8 @@
         <PackageReference Include="NUnit3TestAdapter" Version="4.5.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\FunConsole.Core\FunConsole.Core.fsproj" />
+    </ItemGroup>
+
 </Project>
