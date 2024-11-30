@@ -8,6 +8,7 @@
     <ItemGroup>
         <Compile Include="Graphics\Color.fs" />
         <Compile Include="Message.fs" />
+        <Compile Include="Game.fs" />
     </ItemGroup>
 
     <ItemGroup>
