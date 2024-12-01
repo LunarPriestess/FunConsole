@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FunConsole.Core", "FunConsole.Core\FunConsole.Core.fsproj", "{66611A52-4AC4-4961-9D89-09278243DFA0}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FunConsole.Tests", "FunConsole.Tests\FunConsole.Tests.fsproj", "{ADC7228F-A60D-4306-861E-2012A3D0D76A}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FunConsole.Sample", "FunConsole.Sample\FunConsole.Sample.fsproj", "{FCD8DEB9-7CD8-4A3D-9E6E-DB5153D57E29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{66611A52-4AC4-4961-9D89-09278243DFA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66611A52-4AC4-4961-9D89-09278243DFA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66611A52-4AC4-4961-9D89-09278243DFA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADC7228F-A60D-4306-861E-2012A3D0D76A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC7228F-A60D-4306-861E-2012A3D0D76A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC7228F-A60D-4306-861E-2012A3D0D76A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC7228F-A60D-4306-861E-2012A3D0D76A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCD8DEB9-7CD8-4A3D-9E6E-DB5153D57E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD8DEB9-7CD8-4A3D-9E6E-DB5153D57E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD8DEB9-7CD8-4A3D-9E6E-DB5153D57E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD8DEB9-7CD8-4A3D-9E6E-DB5153D57E29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
